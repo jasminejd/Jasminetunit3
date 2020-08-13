@@ -1,0 +1,126 @@
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+  max-width: 100%;
+}
+
+main {
+    padding: 10px;
+}
+
+.intro {
+    border-bottom: 4px solid #2d3944;
+    box-shadow: 0px 3px 0px 0px white, 0px 4px 0px 0px #2d3944;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+h1 {
+  background: #2d3944;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+  font-size: 20px;
+}
+
+h2 {
+  color: black;
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+legend {
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+
+p,
+label {
+    color: grey;
+    font-size: 1.1em;
+    padding-bottom: 5px;
+}
+
+.flex-pair {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea,
+select {
+  background: #eff0f1;
+  width: auto;
+  padding: 20px;
+  height: 60%;
+  border-radius: 4px;
+  border: none;
+  margin: 10px 0 30px 0;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 4px 8px 0;
+}
+
+::placeholder {
+    text-align: right;
+    padding-right: 3%;
+}
+
+
+textarea {
+    height: 90px;
+}
+
+.zip input {
+    width: 50%;
+}
+
+.zip {
+    border-bottom: 2px solid #2d3944;
+    padding-bottom: 40px;
+}
+
+button {
+    width: 100%;
+    height: 50px;
+    background-color: #4EBBB5;
+    color: #ffff;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    margin: 10px 0 20px 0;
+}
+
+button:hover {
+    filter: brightness(110%);
+}
+
+
+select {
+  background: #eff0f1;
+  width:100%;
+  padding: 10px;
+  height: 70px;
+  border-radius: 4px;
+  border: none;
+  margin-top: 10px;
+}
+
+fieldset {
+border: none;
+margin-top: 50px;
+}
+
+
+footer {
+    padding: 20px 0;
+    text-align: center;
+}
