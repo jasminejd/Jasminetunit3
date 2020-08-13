@@ -1,7 +1,6 @@
 
 * {
-    padding: 0;
-    margin: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -28,8 +27,15 @@ h1 {
   font-size: 20px;
 }
 
+.container {
+  width: 100%;
+  max-width: 768px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 h2 {
-  color: black;
+  color: #2d3944;
   font-size: 20px;
   margin: 20px 0;
 }
@@ -37,17 +43,23 @@ h2 {
 legend {
   font-size: 20px;
   padding-bottom: 20px;
+  color: #2d3944;
 }
 
 
 p,
 label {
-    color: grey;
+    color: #6b7884;
     font-size: 1.1em;
     padding-bottom: 5px;
 }
 
 .flex-pair {
+  display: flex;
+  flex-direction: column;
+}
+
+.newsletter {
   display: flex;
   flex-direction: column;
 }
@@ -60,7 +72,22 @@ select {
   padding: 20px;
   border-radius: 4px;
   border: none;
-  margin: 10px 0 30px 0;
+  margin: 10px 0 10px 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    border: 1px solid #eff0f1;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+    border: 1px solid #2d3944;
+    transition: 2s;
 }
 
 input[type="radio"],
@@ -71,6 +98,7 @@ input[type="checkbox"] {
 ::placeholder {
     text-align: right;
     padding-right: 3%;
+    color: #c3c6ca
 }
 
 
@@ -84,7 +112,12 @@ textarea {
 
 .zip {
     border-bottom: 2px solid #2d3944;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
+    color: #c3c6ca;
+}
+
+.checkbox {
+ margin: 20px 0;
 }
 
 button {
@@ -99,7 +132,7 @@ button {
 }
 
 button:hover {
-    filter: brightness(110%);
+    filter: brightness(100%);
 }
 
 
@@ -115,11 +148,47 @@ select {
 
 fieldset {
 border: none;
-margin-top: 50px;
+margin-top: 30px;
 }
 
 
 footer {
     padding: 20px 0;
     text-align: center;
+    color: grey;
+    font-style: italic;
+}
+
+
+
+@media (min-width: 768px) {
+
+
+
+    .flex-pair {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 30px;
+      }
+
+      .flex-pair input,
+      .flex-pair select {
+        flex-basis: 70%;
+        flex-grow: 1;
+      }
+
+      .flex-pair label {
+        flex-basis: 25%;
+        font-size: 20px;
+      }
+
+      .zip input {
+     max-width: 25%;
+
+
+ }
+
+
+
 }
